@@ -2,13 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap');
 
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 :root {
     --cor0: #8227d6;
     --cor1: #a752f7;
-    --cor2: #008BC7;
     --purple: #681fad;
-    --cyan: #1f91ad;
+    --darkcyan: #1e829b;
+    --cyan: #1f91ad;    
     --dark: #3f3f3f;
     --light: #f6f6f6;
 }
@@ -17,20 +25,14 @@
     width: 0.8em;
 }
 
-::-webkit-scrollbar-track {
-    background: hsl(192 59% 45% / 1);
-    margin-block: .5em;
-    border-radius: 100vw;
-}
-
 ::-webkit-scrollbar-thumb{
-    background: hsl(192 100% 20%);
-    border: .15em solid hsl(192 59% 45% / 1);
+    background: var(--cyan);
+    border: .15em solid #fff;
     border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: hsl(192 100% 15% / 1);
+    background: var(--darkcyan);
 }
 
 * {
@@ -41,28 +43,7 @@
 body {
     background-color: var(--light);
     font-family: poppinsregular,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}    
-
-.container {
-    margin: auto;
 }
-
-header { 
-    background-image: linear-gradient(to right, var(--purple), var(--cyan));
-    position: sticky;   
-    top: 0;
-}
-
-.header-content {
-    max-width: 1250px;
-    margin: auto;
-    height: 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 h1 {
     font-family: cinzelbold, poppinsbold, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace, 'Arial Narrow', Arial, sans-serif;
@@ -74,13 +55,48 @@ li {
 }
 
 a {
-    color: #fff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #dedede;
     transition: 0.3s all;
+}
+
+.container {
+    margin: auto;
+}
+
+header { 
+    background-image: linear-gradient(to right, var(--purple), var(--cyan));
+    position: sticky; 
+    top: 0;
+    z-index: 10;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+header a:hover {
+    color: #eeeeee;
+    font-size: 1.04em;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+.header-content {
+    max-width: 1250px;
+    margin: auto;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
 }
 
 main {
@@ -89,8 +105,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     color: var(--dark);
+    padding: 0 14px;
+}
+
+.bio {
+    width: 100%;
 }
 
 
@@ -100,23 +122,33 @@ main {
     box-shadow: 6px 6px 16px #80808080;
 }
 
-#devicons {
-    display: flex;
-    width: fit-content;
-    margin: 15px  auto;
-    padding: 10px;
-    gap: 10px;
-    align-items: center; 
-    border-radius: 12px;
+.carousel-container {
+    padding: 8px;
     background-image: linear-gradient(to right, var(--purple), var(--cyan));
+    border-radius: 12px;
+    margin: 10px auto;
+    max-width: 400px;
 }
 
-#devicons img {
+.carousel-track {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.devicons {
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    align-items: center;
+    animation: scrollIcons 20s linear infinite;
+}
+
+.devicons img {
     height: 50px;
     width: 50px;
     background-color: #fff;
     padding: 5px;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 #content p {
@@ -124,6 +156,10 @@ main {
     text-indent: 1rem;
     line-height: 1.75em;
     margin-bottom: 10px;
+}
+
+#content a {
+    color: var(--cyan);
 }
 
 #content article:first-child {
@@ -173,7 +209,6 @@ article h3 {
 
 #cursos a:hover {
     color: #34adcb;
-    transition: 0.3s all;
 }
 
 #cursos a:active {
@@ -200,11 +235,11 @@ footer {
 }
 
 footer a {
+    color: #fff;
     font-family: poppinsmedium;
     text-decoration: none;
 }
 
 footer a:hover {
     color: #dedede;
-    transition: 0.3s all;
 }

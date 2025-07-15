@@ -7,20 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="estilo/fonts.css" />
     <link rel="stylesheet" href="estilo/style.css" />
-    <title>Blog Pessoal</title>
-    <style>
-      @media screen and (max-width: 990px) {
-        main {
-          margin-top: 30px;
-          padding-bottom: 0;
-        }
-      }
-
-      main {
-        display: block;
-        text-align: center;
-      }
-    </style>
+    <title>Portifólio</title>
   </head>
   <body>
     <div class="container">
@@ -30,47 +17,60 @@
 
           <nav>
             <ul>
-              <li><a href="#">Sobre mim</a></li>
+              <li><a href="#content">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <main>
-        <section id="bio">
+        <section class="bio">
           <img
+            width="200px"
             id="foto_de_perfil"
             src="imagens/profile.webp"
             alt="Gustavo na praia"
           />
-          <h2>Gustavo Henrique Da Costa Ávila, 22 anos</h2>
+          <h2>Gustavo Henrique Da Costa Ávila</h2>
           <p>São Sebastião do Paraíso - MG</p>
           <p>Sistemas de Informação - UEMG</p>
-          <p>Front-End Web Developer</p>
-          <div id="devicons">
-            <img
-              alt="Gus-Java"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            />
-            <img
-              alt="Gus-HTML"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-            />
-            <img
-              alt="Gus-CSS"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-            />
-            <img
-              alt="Gus-Js"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-            />
-            <img
-              alt="Gus-C++"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-            />
-            <img
-              alt="Gus-Csharp"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-            />
+          <p>Desenvolvedor Web Fullstack</p>
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <div class="devicons">
+                <img
+                  alt="HTML5"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                />
+                <img
+                  alt="CSS3"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                />
+                <img
+                  alt="JavaScript"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+                />
+                <img alt="React.js" src="imagens/react_icon.svg" />
+                <img alt="Node.js" src="imagens/node_js_icon.svg" />
+                <img alt="PostgreSQL" src="imagens/postgreesql_icon.svg" />
+                <!-- Duplicado para efeito de loop -->
+                <img
+                  alt="HTML5"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                />
+                <img
+                  alt="CSS3"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                />
+                <img
+                  alt="JavaScript"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+                />
+                <img alt="React.js" src="imagens/react_icon.svg" />
+                <img alt="Node.js" src="imagens/node_js_icon.svg" />
+                <img alt="PostgreSQL" src="imagens/postgreesql_icon.svg" />
+              </div>
+            </div>
           </div>
         </section>
         <section id="content">
@@ -96,46 +96,79 @@
             </p>
             <p>
               Se quiser acompanhar meus projetos ou ver um pouco do que já
-              construí, dá uma olhada no meu GitHub.
+              construí, dá uma olhada no meu
+              <a href="https://github.com/gusavila" target="_blank"
+                >GitHub
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  class="bi bi-arrow-up-right-square"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"
+                  /></svg></a
+              >.
             </p>
           </article>
           <article>
             <h2>Idiomas</h2>
 
             <div class="idioma">
-              <h3 id="english">Inglês:</h3>
-              <p>Avançado</p>
+              <h3>Inglês:</h3>
+              <p>Avançado (C1)</p>
+            </div>
+            <div class="idioma">
+              <h3>Português:</h3>
+              <p>Fluente</p>
             </div>
           </article>
 
           <article>
-            <h2>Cursos</h2>
+            <h2>Certificações</h2>
             <div id="cursos">
               <ul>
                 <li>
-                  <a href="cursos/Curso HTML5 e CSS3.pdf" target="_blank"
-                    >HTML5 e CSS3</a
+                  <a href="cursos/Arquitetura de redes.pdf" target="_blank"
+                    >Arquitetura de Redes</a
                   >
                 </li>
                 <li>
                   <a
-                    href="cursos/Curso HTML5 e CSS3 Modulo 2.pdf"
+                    href="cursos/CertificadoDeConclusao_Introducao a Amazon Web Services Computacao em Nuvem.pdf"
                     target="_blank"
-                    >HTML5 e CSS3 - Módulo 2</a
+                    >Computação em Nuvem - AWS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="cursos/CertificadoDeConclusao_UX Foundations Interaction Design.pdf"
+                    target="_blank"
+                    >Design de Interação</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="cursos/Figma Essential Training The Basics.pdf"
+                    target="_blank"
+                    >Figma Essential Training</a
                   >
                 </li>
                 <li>
                   <a
                     href="cursos/Fundamentos do Marketing Digital.pdf"
                     target="_blank"
-                    >Fundamentos do Marketing Digital</a
+                    >Google Ateliê Digital</a
                   >
                 </li>
                 <li>
                   <a
                     href="cursos/Marketing Analytics Foundation.pdf"
                     target="_blank"
-                    >Marketing Analytics Foundation</a
+                    >Marketing Analytics Foundation - Meta</a
                   >
                 </li>
                 <li>
@@ -153,6 +186,10 @@
                 </li>
               </ul>
             </div>
+          </article>
+
+          <article id="projetos">
+            <h2>Projetos</h2>
           </article>
 
           <article>
