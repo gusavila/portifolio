@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap");
 
+
+
 @keyframes scrollIcons {
   0% {
     transform: translateX(0);
@@ -18,7 +20,8 @@
   --darkcyan: #1e829b;
   --cyan: #1f91ad;
   --dark: #3f3f3f;
-  --light: #f6f6f6;
+  --light: #eeeeee;
+  --lighter: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
@@ -38,12 +41,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--light);
   font-family: poppinsregular, "Gill Sans", "Gill Sans MT", Calibri,
     "Trebuchet MS", sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 h1 {
@@ -70,6 +75,7 @@ a:hover {
 
 header {
   background-image: linear-gradient(to right, var(--purple), var(--cyan));
+  box-shadow: 2px 2px 12px #3030305b;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -114,24 +120,33 @@ main {
 }
 
 .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  background-color: #fdfdfdc9;
+  padding: 32px;
+  margin-top: 2em;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px #00000010;
 }
 
 #foto_de_perfil {
   border-radius: 300px;
-  margin: 30px 0;
-  box-shadow: 6px 6px 16px #80808080;
+  margin-bottom: 32px;
+  box-shadow: 4px 4px 12px #0000001f;
 }
 
 .carousel-container {
   border-radius: 10px;
-  margin: 10px auto;
-  max-width: 400px;
+  max-width: 350px;
+  margin-top: 14px;
+  padding: 0 5px;
 }
 
 .carousel-track {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 18px;
 }
 
 .devicons {
@@ -149,7 +164,7 @@ main {
   padding: 5px;
   margin: 5px auto;
   border-radius: 10px;
-  box-shadow: 2px 2px 6px #3838381f;
+  box-shadow: 2px 2px 12px #00000010;
 }
 
 #content p {
@@ -173,8 +188,11 @@ main {
 
 article {
   text-align: left;
-  padding: 50px 0;
-  border-top: 1px solid #80808031;
+  padding: 32px;
+  background-color: #fdfdfdc9;
+  margin: 2em auto;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px #00000010;
 }
 
 article h2 {
@@ -290,18 +308,29 @@ article h3 {
   text-align: center;
 }
 
-#redes_sociais {
-  display: flexbox;
-  flex-direction: row;
-  text-align: right;
+.redes_sociais {
+  padding: 2px;
 }
 
-#redes_sociais img {
-  border-radius: 4px;
+.redes_sociais div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  padding: 5px;
+}
+
+.redes_sociais a {
+  display: flex;
+  margin: 2px;
+}
+
+.redes_sociais img {
+  border-radius: 6px;
   transition: transform 0.3s ease;
 }
 
-#redes_sociais img:hover {
+.redes_sociais img:hover {
   transform: translateY(-3px);
 }
 
@@ -322,4 +351,31 @@ footer a {
 
 footer a:hover {
   color: #dedede;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 0.85em;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    background-image: none;
+    background-color: var(--lighter);
+  }
+
+  .bio {
+    background-color: var(--lighter);
+    box-shadow: none;
+    padding: 12px;
+  }
+
+  article {
+    background-color: var(--lighter);
+    box-shadow: none;
+    padding: 12px;
+  }
 }
