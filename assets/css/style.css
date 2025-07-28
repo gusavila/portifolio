@@ -248,7 +248,7 @@ article h3 {
 .main-project-grid a {
   align-self: flex-end;
   color: white !important;
-  background-image: linear-gradient(to right, var(--purple), var(--cyan));
+  background-color: var(--cyan);
   width: fit-content;
   padding: 4px 8px;
   border-radius: 8px;
