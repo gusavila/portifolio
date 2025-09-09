@@ -1,39 +1,40 @@
-# Portfólio Pessoal - Gustavo Ávila
+🌐 Read this in [English](README.md) | [Português](README.pt-BR.md)
 
-Bem-vindo ao meu portfólio pessoal! Este projeto foi criado para apresentar minhas habilidades, certificações e projetos desenvolvidos como desenvolvedor web fullstack.
+# Personal Portfolio - Gustavo Ávila
 
-## 📸 Pré-visualização
+Welcome to my personal portfolio! This project was created to showcase my skills, certifications, and projects developed as a fullstack web developer.
 
-![Preview do portfólio](assets/imagens/preview.webp)
+## 📸 Preview
 
-## 📌 Sobre o Projeto
+![Portifolio Preview](assets/imagens/preview.webp)
 
-Este portfólio foi desenvolvido com foco em responsividade, usabilidade e uma estética moderna. Ele reúne:
+## 📌 About the Project
 
-- Informações pessoais e biografia profissional
-- Certificações e cursos realizados
-- Idiomas que domino
-- Uma vitrine de projetos, com prévias e links para o GitHub e/ou deploys públicos
-- Ícones de tecnologias utilizados no dia a dia
-- Links para redes sociais
+This portfolio was developed with a focus on responsiveness, usability, and a modern aesthetic. It includes:
 
-## 💻 Tecnologias Utilizadas
+- Personal information and professional bio
+- Certifications and completed courses
+- Languages I speak
+- A project showcase, with previews and links to GitHub and/or public deploys
+- Links to social media profiles
+
+## 💻 Technologies Used
 
 - **HTML5**
-- **CSS3** (com uso de variáveis, animações e media queries)
-- **JavaScript** (para funcionalidades interativas)
-- **Responsividade** via `media queries`
-- **Animações** com `@keyframes`
-- **Fontes personalizadas** com `@import`
+- **CSS3** (with variables, animations, and media queries)
+- **JavaScript** (for interactive features)
+- **Responsiveness** via `media queries`
+- **Animations** with `@keyframes`
+- **Custom fonts** with `@import`
 
-## 🎨 Layout e Estilo
+## 🎨 Layout and Style
 
-- **Design responsivo**: adaptado para dispositivos móveis
-- **Paleta de cores**: baseada em tons de roxo e ciano, proporcionando contraste e modernidade
-- **Carousel de tecnologias**: animação contínua com ícones das principais stacks
-- **Cards interativos**: com efeito `hover` e transições suaves
+- **Responsive design**: optimized for mobile devices
+- **Color palette**: based on shades of purple and cyan, providing contrast and modernity
+- **Technology carousel**: continuous animation with icons of main stacks
+- **Interactive cards**: with `hover` effects and smooth transitions
 
-## 📂 Estrutura de Pastas
+## 📂 Folder Structure
 
 ```
 ├── index.html
@@ -42,51 +43,51 @@ Este portfólio foi desenvolvido com foco em responsividade, usabilidade e uma e
 │   │   ├── style.css
 │   │   └── fonts.css
 │   ├── imagens/
-│   │   └── [fotos de perfil e prévias dos projetos]
+│   │   └── [profile photos and project previews]
 │   ├── javascript/
 │   │   └── script.js
 │   ├── favicon.ico
 ├── cursos/
-│   └── [PDFs de certificados]
+│   └── [certificate PDFs]
 ```
 
-## 🧠 Conteúdo
+## 🧠 Content
 
-### Sobre Mim
-Apresentação pessoal, formação em Sistemas de Informação (UEMG), experiência com tecnologias como React, Node.js, Express.js, PostgreSQL, entre outras.
+### About Me
+Personal introduction, degree in Information Systems (UEMG), and experience with technologies such as React, Node.js, Express.js, PostgreSQL, among others.
 
-### Idiomas
-- **Português**: fluente
-- **Inglês**: avançado (nível C1)
+### Languages
+- **Portuguese**: fluent
+- **English**: advanced (C1 level)
 
-### Certificações
-Inclui cursos como:
-- Arquitetura de Redes
-- AWS - Computação em Nuvem
+### Certifications
+Includes courses such as:
+- Network Architecture
+- AWS - Cloud Computing
 - Figma Essential Training
 - UX Foundations
-- Marketing Digital (Google)
+- Digital Marketing (Google)
 - Marketing Analytics (Meta)
-- WordPress, Copywriting, entre outros
+- WordPress, Copywriting, and more
 
-### Projetos em Destaque
-- **Fullstack Todo List**: sistema de tarefas com autenticação
-- **Family Travel Tracker**: controle de viagens em família
-- **TechNews Landing Page**: landing page para uma newsletter de tecnologia
+### Featured Projects
+- **Fullstack Todo List**: task management system with authentication
+- **Family Travel Tracker**: family travel tracking system
+- **TechNews Landing Page**: landing page for a tech newsletter
 
-### Outros Projetos
-Inclui projetos como:
+### Other Projects
+Includes projects such as:
 - Simon Game
 - Dice Game
 - Tindog
-- Sistema de Cadastro (CRUD)
+- Registration System (CRUD)
 - Capital Quiz
-- Diário
-- Projeto Android
-- e outros...
+- Diary
+- Android Project
+- and more...
 
-### Redes Sociais
-Links com badges personalizados para:
+### Social Media
+Links with customized badges for:
 - GitHub
 - LinkedIn
 - Instagram
@@ -94,15 +95,15 @@ Links com badges personalizados para:
 - Facebook
 - YouTube
 
-## 🔗 Acesse
+## 🔗 Access
 
-- **Portfólio online**: [gusavila.github.io](https://gusavila.github.io/portifolio/)
+- **Online portfolio**: [gusavila.github.io](https://gusavila.github.io/portifolio/)
 - **GitHub**: [github.com/gusavila](https://github.com/gusavila)
 
-## 📅 Atualizado
+## 📅 Updated
 
-Este portfólio foi atualizado em **2025** e continuará evoluindo com novos projetos e certificações.
+This portfolio was last updated in **2025** and will continue to evolve with new projects and certifications.
 
 ## 🧾 Licença
 
-Este projeto é de uso pessoal. Sinta-se à vontade para se inspirar, mas não copie diretamente sem créditos.
+This project is for personal use. Feel free to take inspiration, but please do not copy it directly without giving credit.
